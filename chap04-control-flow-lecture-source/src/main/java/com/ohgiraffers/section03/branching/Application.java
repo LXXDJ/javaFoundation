@@ -5,6 +5,9 @@ public class Application {
         A_break a = new A_break();
 //        a.simpleBreakStatement();
 //        a.simpleBreakStatement2();
-        a.testJumpBreak();
+//        a.testJumpBreak();
+
+        B_continue b = new B_continue();
+        b.simpleContinueStatement();
     }
 }
