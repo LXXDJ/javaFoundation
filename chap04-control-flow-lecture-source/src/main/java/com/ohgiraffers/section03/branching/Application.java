@@ -8,6 +8,7 @@ public class Application {
 //        a.testJumpBreak();
 
         B_continue b = new B_continue();
-        b.simpleContinueStatement();
+//        b.simpleContinueStatement();
+        b.testJumpContinue();
     }
 }
