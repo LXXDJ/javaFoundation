@@ -1,55 +1,25 @@
 package com.ohgiraffers.practice;
 
-import java.util.Scanner;
-
 public class test {
     public static void main(String[] args) {
+        
+        // 배열 참조변수 선언
+        int[] arr1;
+        int arr2[];
 
-//        Scanner sc = new Scanner(System.in);
-//        int count = 0;
-//
-//        System.out.print("숫자 : ");
-//        int num = sc.nextInt();
-//
-//        if(num == 1){
-//            System.out.println("num == 1 : "+num);
-//        }
-//
-//        for(int i = 1;i<=num;i++){
-//            if(num%i == 0){
-//                System.out.println(i+"\t");
-//                count++;
-//            }
-//        }
-//        System.out.println("가 "+num+"의 약수입니다.");
-//        if(count==2){
-//            System.out.println(num+"은 소수입니다.");
-//        }
+        // 배열 참조변수 선언 + 배열 크기 할당
+        int[] arr3 = new int[10];
 
+        // 참조 변수만 선언된 변수에
+        int[] arr5;
+        // 배열 할당 후 대입
+        arr5 = new int[10];
 
-        /* 코카콜라 스프라이트 밀키스 */
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("음료를 선택 : ");
-        String drink = sc.nextLine();
-
-        switch(drink){
-            case "코카콜라":
-                System.out.println("1000원입니다.");
-                break;
-            case "스프라이트":
-                System.out.println("1200원입니다.");
-                break;
-            case "밀키스":
-                System.out.println("800원입니다.");
-            default:
-                System.out.println("입력한 음료가 없습니다.");
-        }
-
-
-
-
-
+        // 배열 참조변수 선언 + 배열 크기 할당 + 값 초기화
+        int[] arr6 = {0,1,2,3};
+        int[] arr7 = new int[]{0,1,2,3};
+        int[] even = {2,4,6,8};
+        String[] weeks = {"월", "화", "수", "목", "금", "토", "일"};
 
     }
 }
