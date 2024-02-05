@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b27832f1-0f64-4a39-9f9e-2a9e81f44b0d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/main/java/com/ohgiraffers/practice/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/main/java/com/ohgiraffers/practice/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/practice/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/practice/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section03/dto/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section03/dto/MemberDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section04/dto/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section04/dto/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/setion04/dto/Application.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,9 +16,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2bhVOy6o9IJrI3AvQgQflbUHmUQ" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -24,7 +28,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/dev/lecture_code/JavaFoundation/chap04-control-flow-lecture-source",
+    "last_opened_file_path": "C:/dev/lecture_code/JavaFoundation/chap06-class-and-object-lecture-source",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -38,6 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706667269913</updated>
       <workItem from="1706667270948" duration="64000" />
+      <workItem from="1707114050069" duration="154000" />
     </task>
     <servers />
   </component>
