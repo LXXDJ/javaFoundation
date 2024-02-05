@@ -78,22 +78,22 @@ public class Application2 {
         Scanner sc = new Scanner(System.in);
 
         int randomNum = (int)((Math.random()*100)+1);
-//        int inputNum = 0;
-//        int num = 1;
-//
-//        do{
-//            System.out.print("정수 입력 : ");
-//            inputNum = sc.nextInt();
-//
-//            if(randomNum > inputNum){
-//                System.out.println("정수가 난수보다 작습니다.");
-//            }else if(randomNum < inputNum){
-//                System.out.println("정수가 난수보다 큽니다.");
-//            }
-//            num++;
-//        }while(randomNum != inputNum);
-//
-//        System.out.println("정답입니다. "+num+"회 만에 정답을 맞추셨습니다.");
+        int inputNum = 0;
+        int num = 1;
+
+        do{
+            System.out.print("정수 입력 : ");
+            inputNum = sc.nextInt();
+
+            if(randomNum > inputNum){
+                System.out.println("정수가 난수보다 작습니다.");
+            }else if(randomNum < inputNum){
+                System.out.println("정수가 난수보다 큽니다.");
+            }
+            num++;
+        }while(randomNum != inputNum);
+
+        System.out.println("정답입니다. "+num+"회 만에 정답을 맞추셨습니다.");
 
 
 //        while(randomNum != inputNum){
@@ -109,22 +109,22 @@ public class Application2 {
 //        }
 //        System.out.println("정답입니다. "+num+"회 만에 정답을 맞추셨습니다.");
 
-        int i = 0;
-        for(;;){
-            System.out.print("정수 입력 : ");
-            int inputNum = sc.nextInt();
-            i++;
-
-            if(randomNum > inputNum){
-                System.out.println("정수가 난수보다 작습니다.");
-            }else if(randomNum < inputNum){
-                System.out.println("정수가 난수보다 큽니다.");
-            }else if(randomNum == inputNum){
-                System.out.println("정답입니다. "+i+"회 만에 정답을 맞추셨습니다.");
-                break;
-            }
-
-        }
+//        int i = 0;
+//        for(;;){
+//            System.out.print("정수 입력 : ");
+//            int inputNum = sc.nextInt();
+//            i++;
+//
+//            if(randomNum > inputNum){
+//                System.out.println("정수가 난수보다 작습니다.");
+//            }else if(randomNum < inputNum){
+//                System.out.println("정수가 난수보다 큽니다.");
+//            }else if(randomNum == inputNum){
+//                System.out.println("정답입니다. "+i+"회 만에 정답을 맞추셨습니다.");
+//                break;
+//            }
+//
+//        }
 
 
 
