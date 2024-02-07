@@ -10,7 +10,7 @@ public class FireCar extends Car {  // FireCar 클래스가 Car 클래스(전역
     /* overriding: 부모 클래스의 메서드와 함수를 자식 클래스에서 재정의하는 것 */
     /* @Override 어노테이션
     *  오버라이딩 성립 요건을 체크하여 성립되지 않는 경우 컴파일 에러를 발생시킨다.
-    *  오버라이딩 하는 메소드는 기본적으로 부모 메스드 선언 내용을 그대로 작성해야 한다. */
+    *  오버라이딩 하는 메소드는 기본적으로 부모 메소드 선언 내용을 그대로 작성해야 한다. */
 
     @Override
     public void soundHorn(){

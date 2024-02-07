@@ -8,6 +8,7 @@ public class StaticMethodTest {
     }
     public static void staticMethod(){
 //        this.count++;   // 인스턴스를 생성하지 않고 사용하는 메소드이기 때문에 this에는 주소가 들어갈 수 없다.
+                          // this는 객체의 주소를 갖고 있다. 여기서는 count를 부를 수 없다.
         System.out.println("StaticMethod 호출");
     }
 }
