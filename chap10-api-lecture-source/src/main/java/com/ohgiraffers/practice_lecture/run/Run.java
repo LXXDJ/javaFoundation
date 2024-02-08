@@ -1,7 +1,6 @@
 package com.ohgiraffers.practice_lecture.run;
 
 import com.ohgiraffers.practice_lecture.dto.Employee;
-import com.ohgiraffers.practice_lecture.dto.Person;
 import com.ohgiraffers.practice_lecture.dto.Student;
 
 import java.util.Scanner;
@@ -59,7 +58,7 @@ public class Run {
                     break;
                 }
             }
-        } // while -end
+        }
 
         // 출력
         for(Employee i : employeeArr){
@@ -67,7 +66,5 @@ public class Run {
                 System.out.println(i.information());
             }
         }
-
-        System.out.println("프로그램 종료");
     }
 }
