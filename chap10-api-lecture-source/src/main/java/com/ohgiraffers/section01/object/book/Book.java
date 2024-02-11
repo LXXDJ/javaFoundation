@@ -7,7 +7,6 @@ public class Book {
     private int price;
 
     public Book(){}
-
     public Book(int number, String title, String author, int price) {
         this.number = number;
         this.title = title;
@@ -80,7 +79,9 @@ public class Book {
     /* hashCode() 오버라이딩 */
     @Override
     public int hashCode(){
+        /* 곱셈 연산을 누적시켜야 하기 때문에 0이 아닌 값으로 초기화 */
         int result = 1;
+
         /* 필드마다 곱해줄 소수값 선언
         *  31은 소수이기 때문에 연산 시 동일한 hashCode 값이 나오지 않을 확률을 증가시킨다.
         *  31이 통상적인 관례이며 String 클래스의 hashCode에서도 사용하는 값이다. */

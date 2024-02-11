@@ -53,6 +53,7 @@ public class Application3 {
         while(st3.hasMoreTokens()) {
             System.out.println("st3 : " + st3.nextToken());
         }
+
         /* nextToken()으로 토큰을 꺼내면 해당 StringTokenizer의 토큰을 재사용 하는 것이 불가능하다. */
         while(st1.hasMoreTokens()) {
             System.out.println("st1 : " + st1.nextToken());
@@ -61,6 +62,7 @@ public class Application3 {
         String colorStr = "red*oranage#blue/yellow green";
         /* "*#/ " 이라는 문자열이 구분자로 존재하지 않아서 에러 발생함 */
         // String[] colors = colorStr.split("*#/ "); //에러남
+
         /* 대괄호로 묶은 문자열은 문자열이 아닌 각 문자들의 패턴으로 볼 수 있다.
          * 따라서 순서 상관 없이 존재하는 문자들을 이용해서 구분자로 사용할 수 있다.
          * */

@@ -23,7 +23,5 @@ public class Application1 {
         System.out.println("book1 : " + book1); // book1 : BookVO [number = 1, title = 홍길동전, author = 허균, price = 50000]
         System.out.println("book2 : " + book2); // book2 : BookVO [number = 2, title = 목민심서, author = 정약용, price = 30000]
         System.out.println("book3 : " + book3); // book3 : BookVO [number = 2, title = 목민심서, author = 정약용, price = 30000]
-
-
     }
 }

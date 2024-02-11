@@ -16,7 +16,4 @@ public class Samsung extends Stock {
 
     public void setVolume(int volume){Stock.volume = volume;}
     public int getVolume(){return Stock.volume;}
-
-
-
 }

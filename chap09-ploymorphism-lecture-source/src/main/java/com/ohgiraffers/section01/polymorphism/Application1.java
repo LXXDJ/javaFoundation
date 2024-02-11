@@ -61,7 +61,7 @@ public class Application1 {
 
         /* 타입 형변환 - 고유한 기능을 동작시키기 위해서는 형변환 필요
         *  class type casting : 클래스 형변환
-        *  타입 형벼노한 시 실제 인스턴스와 타입이 일치하지 않는 경우 ClassCastException이 발생할 수 있다. */
+        *  타입 형변환 시 실제 인스턴스와 타입이 일치하지 않는 경우 ClassCastException이 발생할 수 있다. */
 
         System.out.println("==== 클래스타입 형변환 ====");
         ((Cat) a1).jump();

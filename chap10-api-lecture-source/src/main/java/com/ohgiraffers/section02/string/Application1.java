@@ -40,6 +40,10 @@ public class Application1 {
         System.out.println("indexOf('a') : " + text.indexOf('a'));   // 1
         System.out.println("indexOf('b') : " + text.indexOf('b'));   // -1
 
+        /* lastIndexOf() */
+        System.out.println("lastIndexOf('a') : " + text.lastIndexOf('a'));   // 7
+        System.out.println("lastIndexOf('b') : " + text.lastIndexOf('b'));   // -1
+
         /* trim() : 문자열의 앞 뒤에 공백을 제거한 문자열 반환 */
         String trimString = "   java   ";
         System.out.println("trimString : #" + trimString + "#");                    // #   java   #

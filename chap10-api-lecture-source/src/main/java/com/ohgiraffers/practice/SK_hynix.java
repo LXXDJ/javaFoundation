@@ -9,6 +9,4 @@ public class SK_hynix extends Stock{
 
     public void setValue(double value){super.value = value;}
     public double getValue(){return super.value;}
-
-
 }
