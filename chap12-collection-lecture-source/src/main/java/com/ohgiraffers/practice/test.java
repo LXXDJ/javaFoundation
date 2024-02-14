@@ -1,45 +1,28 @@
 package com.ohgiraffers.practice;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class test {
     public static void main(String[] args) {
-        // Stack 인스턴스 생성
-        Stack<String> integerStack = new Stack<>();
+        LinkedHashSet<String> lhset = new LinkedHashSet<>();
 
-        integerStack.push("가");
-        integerStack.push("나");
-        integerStack.push("다");
-        integerStack.add("라");
-        integerStack.add("마");
+        lhset.add("java");
+        lhset.add("oracle");
+        lhset.add("jdbc");
+        lhset.add("html");
+        lhset.add("css");
 
-        System.out.println(integerStack);   // [가, 나, 다, 라, 마]
+        System.out.println("lhset : " + lhset);     // [java, oracle, jdbc, html, css] : 저장순서 유지
 
-        System.out.println("size() : " + integerStack.size());              // 5
+        Iterator<String> iter = lhset.iterator();
+        while(iter.hasNext()){                  // 다음요소가 있는지 확인하고 있다면,
+            System.out.println(iter.next().toUpperCase());    // 다음요소 반환 (대문자로)
+        }
 
-        System.out.println("search() : " + integerStack.search("가"));   // 5
-
-        System.out.println("peek() : " + integerStack.peek());      // 마
-        System.out.println(integerStack);                           // [가, 나, 다, 라, 마]
-        System.out.println("pop() : " + integerStack.pop());        // 마
-        System.out.println(integerStack);                           // [가, 나, 다, 라]
-
-        integerStack.remove("가");
-        System.out.println("remove() : " + integerStack);           // [나, 다, 라]
-
-
-        System.out.println("pop() : " + integerStack.pop());        // 라
-        System.out.println("pop() : " + integerStack.pop());        // 다
-
-        System.out.println("isEmpty() : " + integerStack.isEmpty());    // false
-
-        integerStack.clear();
-        System.out.println("clear() : " + integerStack);                // []
-
-        System.out.println("isEmpty() : " + integerStack.isEmpty());    // true
-
-//        System.out.println("pop() : " + integerStack.pop());      // EmptyStackException : stack이 이미 비어있는 경우 에러 발생
+        Object[] arr = lhset.toArray();
+        for(Object obj : arr){
+//            System.out.println(obj.toUpperCase());    // Object 타입에서 String 타입을 사용할 수 없다.
+            System.out.println(((String)obj).toUpperCase());    // 강제형변환
+        }
     }
 }

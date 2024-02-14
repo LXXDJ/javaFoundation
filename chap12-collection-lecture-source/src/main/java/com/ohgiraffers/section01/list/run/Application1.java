@@ -1,4 +1,4 @@
-package com.ohgiraffers.setion01.list.run;
+package com.ohgiraffers.section01.list.run;
 
 import java.util.*;
 
@@ -68,6 +68,14 @@ public class Application1 {
 //        alist.set(1, true); // 오토박싱을 통해서 Boolean 값 true 값으로 수정됨 (Boolean.valueOf(true) 입력과 동일)
         alist.set(1, Boolean.valueOf(true)); // 해당 인덱스의 값 수정
         System.out.println("alist : " + alist); // [banana, true, Tue Feb 13 12:41:53 KST 2024, apple]
+
+        System.out.println("isEmpty() : " + alist.isEmpty());   // false
+
+        alist.clear();
+        System.out.println("clear() : " + alist);               // [];
+
+        System.out.println("isEmpty() : " + alist.isEmpty());   // true
+
 
 
         List<String> stringList = new ArrayList<>();    // 제네릭타입을 String으로 타입 지정

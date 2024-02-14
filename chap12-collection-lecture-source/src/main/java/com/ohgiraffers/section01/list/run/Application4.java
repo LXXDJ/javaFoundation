@@ -1,4 +1,4 @@
-package com.ohgiraffers.setion01.list.run;
+package com.ohgiraffers.section01.list.run;
 
 import java.util.Stack;
 
