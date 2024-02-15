@@ -38,7 +38,7 @@ public class Application1 {
         System.out.println("키 9에 대한 객체 : " + hmap.get(9));  // yellow banana
 
         hmap.remove(9);
-        System.out.println("hmap : " + hmap);   // {33=123, one=Wed Feb 14 11:35:52 KST 2024, 11=yellow banana, 12=yellow banana}
+        System.out.println("remove() : " + hmap);   // {33=123, one=Wed Feb 14 11:35:52 KST 2024, 11=yellow banana, 12=yellow banana}
 
         System.out.println("size() : " + hmap.size());  // 4
 
