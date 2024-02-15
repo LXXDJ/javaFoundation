@@ -5,7 +5,7 @@ public class Book {
     private String author;
     private String publisher;
 
-    public Book(){};
+    public Book(){}
     public Book(String title, String author, String publisher){
         this.title = title;
         this.author = author;
@@ -16,9 +16,9 @@ public class Book {
     public void setAuthor(String author){this.author = author;}
     public void setPublisher(String publisher){this.publisher = publisher;}
 
-    public String getTitle(){return title;}
-    public String getAuthor(){return author;}
-    public String getPublisher(){return publisher;}
+    public String getTitle(){return this.title;}
+    public String getAuthor(){return this.author;}
+    public String getPublisher(){return this.publisher;}
 
     public String toString(){
         return title + ", 저자 : " + author + ", 출판사 : " + publisher;

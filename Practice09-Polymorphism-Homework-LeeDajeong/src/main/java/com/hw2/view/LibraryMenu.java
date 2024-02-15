@@ -53,10 +53,16 @@ public class LibraryMenu {
         sc = new Scanner(System.in);
         System.out.print("검색할 제목 키워드 : ");
         Book[] searchList = lm.searchBook(sc.nextLine());
+        Boolean isTrue = true;
 
         for(Book i : searchList){
-            if(i != null) System.out.println(i);
+            if(i != null){
+                System.out.println(i);
+                isTrue = false;
+            }
         }
+
+        if(isTrue) System.out.println("일치하는 도서 목록이 없습니다.");
     }
     public void rentBook(){
         selectAll();

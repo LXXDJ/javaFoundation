@@ -4,9 +4,9 @@ public class Member {
     private String name;
     private int age;
     private char gender;
-    private int couponCount = 0;
+    private int couponCount;
 
-    public Member(){};
+    public Member(){}
     public Member(String name, int age, char gender){
         this.name = name;
         this.age = age;
@@ -18,12 +18,13 @@ public class Member {
     public void setGender(char gender){this.gender = gender;}
     public void setCouponCount(int couponCount){this.couponCount = couponCount;}
 
-    public String getName(){return name;}
-    public int getAge(){return age;}
-    public char getGender(){return gender;}
-    public int getCouponCount(){return couponCount;}
+    public String getName(){return this.name;}
+    public int getAge(){return this.age;}
+    public char getGender(){return this.gender;}
+    public int getCouponCount(){return this.couponCount;}
 
     public String toString(){
-        return "이름 : " + name + ", 나이 : " + age + ", 성별 : " + gender + ", 쿠폰개수 : " + getCouponCount();
+        return "이름 : " + name + ", 나이 : " + age + ", 성별 : " + gender + ", 쿠폰개수 : " + couponCount;
     }
+
 }

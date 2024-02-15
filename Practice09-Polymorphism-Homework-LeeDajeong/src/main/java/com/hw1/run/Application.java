@@ -5,7 +5,7 @@ import com.hw1.view.LibraryMenu;
 
 public class Application {
     public static void main(String[] args) {
-        LibraryMenu lmenu = new LibraryMenu();
-        lmenu.mainMenu();
+        LibraryMenu menu = new LibraryMenu();
+        menu.mainMenu();
     }
 }
