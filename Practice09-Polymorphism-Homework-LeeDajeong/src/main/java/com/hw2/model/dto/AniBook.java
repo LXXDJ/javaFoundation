@@ -1,4 +1,4 @@
-package com.hw1.model.dto;
+package com.hw2.model.dto;
 
 public class AniBook extends Book {
     private int accessAge;
@@ -10,11 +10,10 @@ public class AniBook extends Book {
     }
 
     public void setAccessAge(int accessAge){this.accessAge = accessAge;}
-
     public int getAccessAge(){return accessAge;}
 
     @Override
     public String toString(){
-        return super.toString() + ", 제한연령 : " + accessAge;
+        return super.toString() + ", 연령제한 : " + accessAge;
     }
 }

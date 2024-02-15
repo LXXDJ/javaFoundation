@@ -31,14 +31,14 @@ public class LibraryMenu {
 
             switch (sc.nextInt()){
                 case 1:
-                    System.out.println(lm.myinfo());;
-                break;
+                    System.out.println(lm.myinfo());
+                    break;
                 case 2: selectAll();
-                break;
+                    break;
                 case 3: searchBook();
-                break;
+                    break;
                 case 4: rentBook();
-                break;
+                    break;
                 case 0: break label;
                 default:
                     System.out.println("보기 중에서 선택해주세요.");
