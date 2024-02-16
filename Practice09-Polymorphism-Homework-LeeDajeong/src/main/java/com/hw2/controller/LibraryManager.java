@@ -45,7 +45,7 @@ public class LibraryManager {
         int result = 0;
 
         if(bList[index] instanceof AniBook){
-            if(aniBook.getAccessAge() < mem.getAge()) {
+            if(((AniBook) bList[index]).getAccessAge() > mem.getAge()) {
                 result = 1;
             }
         }else if(bList[index] instanceof CookBook){
