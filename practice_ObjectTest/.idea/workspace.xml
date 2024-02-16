@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="46882f1b-65b2-4be6-a107-5cf243b5fb8b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Practice_StudyGroup/src/main/java/com/ohgiraffers/Q2_3/controller/Exchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice_StudyGroup/src/main/java/com/ohgiraffers/Q2_3/controller/Exchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice_StudyGroup/src/main/java/com/ohgiraffers/Q2_3/dto/AUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice_StudyGroup/src/main/java/com/ohgiraffers/Q2_3/dto/AUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice_StudyGroup/src/main/java/com/ohgiraffers/Q2_3/dto/EUR.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice_StudyGroup/src/main/java/com/ohgiraffers/Q2_3/dto/EUR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice_StudyGroup/src/main/java/com/ohgiraffers/Q2_3/dto/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice_StudyGroup/src/main/java/com/ohgiraffers/Q2_3/dto/Money.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice_StudyGroup/src/main/java/com/ohgiraffers/Q2_3/dto/USD.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice_StudyGroup/src/main/java/com/ohgiraffers/Q2_3/dto/USD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap14-io-lecture-source/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap14-io-lecture-source/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap14-io-lecture-source/src/main/java/com/ohgiraffers/section02/stream/Application1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap14-io-lecture-source/src/main/java/com/ohgiraffers/section02/stream/Application1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap14-io-lecture-source/src/main/java/com/ohgiraffers/section02/stream/testInputStream" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2cRR33C8eNUUyt0InStm16nHbZx" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/dev/lecture_code/JavaFoundation/practice_ObjectTest",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46882f1b-65b2-4be6-a107-5cf243b5fb8b" name="Changes" comment="" />
+      <created>1708072201370</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708072201370</updated>
+      <workItem from="1708072202363" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

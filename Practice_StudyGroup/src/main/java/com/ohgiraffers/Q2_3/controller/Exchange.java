@@ -9,6 +9,7 @@ public class Exchange {
     private Person person;
     private Money money;
     private Money[] kinds = new Money[]{new USD(), new EUR(), new AUD()};
+    double randomRate = 0;
     public void mainPage(){
         System.out.println("오늘의 환율 공시");
         today();
@@ -52,35 +53,71 @@ public class Exchange {
 
     public void randomEvent(){  // 소수점 둘째자리까지만 출력
         int num = (int)(Math.random()*500);
-        double randomRate = num * 0.01;
+        randomRate = num * 0.01;
         System.out.println("축하합니다. 수수료율 랜덤 할인 이벤트 " + randomRate + "%에 당첨되셨습니다.");
     }
 
     public void change(){
-        label: while (true){
+        int index;
+        int won;
+        label1: while (true){
             System.out.println("환전 종류를 선택해주세요. \n1.미국달러 2.유로 3.호주달러");
-            int index = sc.nextInt();
-            switch (index){
-                case 1 : calc(index);
-                    break;
-                case 2 :
-                    break;
-                case 3 :
-                    break;
-                default:
-                    System.out.println("보기 중에서 선택해주세요");
-                    continue label;
+            index = sc.nextInt()-1;
+
+            if(0 >= index && index >= kinds.length){
+                System.out.println("보기 중에서 선택해주세요");
+                continue label1;
             }
+            break;
         }
+//        label2: while (true){
+//            System.out.print("얼마를 환전하시겠습니까? (단위 : 만원) : ");
+//            won = sc.nextInt();
+//
+//            if(0 >= won) {
+//                System.out.println("음수 또는 0은 입력하실 수 없습니다. 다시 입력해주세요.");
+//                continue label2;
+//            }
+//            break;
+//        }
+        calc(index, won);
     }
 
-    public void calc(int index){
-        // 우대적용 50% 경우 1,010.36 = 1,001.60 +(1,019.12 - 1,001.60)*50%
-
+    public void limitCalc(int index, int won){
         Money choose = kinds[index];
-        choose.getNotified();
 
-        double rate =
+        label2: while (true){
+            System.out.print("얼마를 환전하시겠습니까? (단위 : 만원) : ");
+            won = sc.nextInt();
+
+            if(won <= 0){
+                System.out.println("음수 또는 0은 입력하실 수 없습니다. 다시 입력해주세요.");
+                continue label2;
+            }
+
+            if(index == 0){
+                if(won > choose.getLimit()){
+                    System.out.println("일일 최고 환전 한도는 ");
+                }
+            }else if(index == 1){
+
+            }else if(index == 2){
+
+            }
+
+        }
+
+    }
+
+    public void calc(int index, int won){
+        // 우대적용 50% 경우 1,010.36 = 1,001.60 +(1,019.12 - 1,001.60)*50%
+        Money choose = kinds[index];
+        double applyRate = choose.getNotified() + (choose.getBuy() - choose.getNotified()) * (choose.getRate() + this.randomRate);
+
+        // 1달러 = applyRate
+
+
+
     }
 
 

@@ -1,6 +1,7 @@
 package com.ohgiraffers.Q2_3.dto;
 
 public class Money {
+    String nation;
     double notified;
     double buy;
     int rate;
@@ -14,17 +15,19 @@ public class Money {
         this.limit = limit;
     }
 
+    public void setNation(String nation){this.nation = nation;}
     public void setNotified(double notified) {this.notified = notified;}
     public void setBuy(double buy) {this.buy = buy;}
     public void setRate(int rate) {this.rate = rate;}
     public void setLimit(int limit) {this.limit = limit;}
 
+    public String getNation(){return nation;}
     public double getNotified() {return notified;}
     public double getBuy() {return buy;}
     public int getRate() {return rate;}
     public int getLimit() {return limit;}
 
     public String toString(){
-        return "고시환율 : " + this.notified + "원 / 현찰살때 : " + this.buy + "원 / 환율우대 : " + this.rate + "% / 일일한도 : " + this.limit + "원";
+        return "[" + nation + "] " + "고시환율 : " + this.notified + "원 / 현찰살때 : " + this.buy + "원 / 환율우대 : " + this.rate + "% / 일일한도 : " + this.limit + "원";
     }
 }
