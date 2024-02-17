@@ -2,7 +2,6 @@ package com.ohgiraffers.Q2_3.dto;
 
 public class AUD extends Money {
     {
-        this.nation = "호주";
         this.unit = "호주달러";
         this.notified = 868.14;
         this.buy = 884.75;
