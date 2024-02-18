@@ -1,6 +1,6 @@
-package com.ohgiraffers.Q2_3.controller;
+package com.ohgiraffers.Dajeong.controller;
 
-import com.ohgiraffers.Q2_3.dto.*;
+import com.ohgiraffers.Dajeong.dto.*;
 
 import java.util.Scanner;
 

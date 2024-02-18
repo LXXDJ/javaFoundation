@@ -1,6 +1,6 @@
-package com.ohgiraffers.Q2_3.run;
+package com.ohgiraffers.Dajeong.run;
 
-import com.ohgiraffers.Q2_3.controller.Exchange;
+import com.ohgiraffers.Dajeong.controller.Exchange;
 
 public class Application {
     public static void main(String[] args) {

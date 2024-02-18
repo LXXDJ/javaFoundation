@@ -6,7 +6,7 @@ public class Application3 {
     public static void main(String[] args) {
         /* [데이터 입출력 보조스트림]
         *  DataInputStream / DataOutputStream
-        *  - 외부 데이터로부터 읽어오는 데이터를 바이트형 정수, 문자, 문자열로만 읽어오면
+        *  - 외부 데이터로부터 읽어오는 데이터를 바이트형 정수, 문자, 문자열로만 읽어오며
         *    여러 데이터 타입을 취급하는 경우 별도로 처리를 해주어야 한다.
         *  - 따라서 데이터 자료형 별로 처리하는 기능을 추가한 보조스트림을 제공하고 있다. */
 

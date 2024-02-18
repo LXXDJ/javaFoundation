@@ -6,7 +6,7 @@ import java.io.IOException;
 public class Application {
     public static void main(String[] args) {
         /* [File 클래스]
-         *  JDK 1.0부터 지원하는 API로 파일 처리를수행하는 대표적인 클래스이다.
+         *  JDK 1.0부터 지원하는 API로 파일 처리를 수행하는 대표적인 클래스이다.
          *  대상 파일에 대한 정보로 인스턴스를 생성하고 파일의 생성, 삭제 등의 처리를 수행하는 기능 제공*/
 
         File file = new File("src/main/java/com/ohgiraffers/section01/file/test.txt");

@@ -10,7 +10,7 @@ public class Application1 {
         *  2. try-catch로 처리 */
 
         ExceptionTest et = new ExceptionTest();
-        et.checkEnoughMoney(10000, 50000);
+//        et.checkEnoughMoney(10000, 50000);
         et.checkEnoughMoney(50000, 10000);
     }
 }

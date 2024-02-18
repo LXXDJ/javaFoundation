@@ -11,7 +11,7 @@ public class Application2 {
         ExceptionTest et = new ExceptionTest();
 
         try{
-            et.checkEnoughMoney(20000, 10000);
+            et.checkEnoughMoney(20000, -10000);
         }catch (NotEnoughMoneyException e){
             System.out.println("NotEnoughMoneyException 발생");
             System.out.println(e.getMessage());

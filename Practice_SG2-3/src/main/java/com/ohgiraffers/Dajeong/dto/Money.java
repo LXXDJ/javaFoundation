@@ -1,4 +1,4 @@
-package com.ohgiraffers.Q2_3.dto;
+package com.ohgiraffers.Dajeong.dto;
 
 public class Money {
     String unit;    // 단위
