@@ -4,53 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8db23870-8600-4c23-a131-6640a88a2f43" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice-collection/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice-collection/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ohgiraffers/Q2_3/controller/Exchange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ohgiraffers/Q2_3/dto/AUD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ohgiraffers/Q2_3/dto/EUR.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ohgiraffers/Q2_3/dto/Money.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ohgiraffers/Q2_3/dto/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ohgiraffers/Q2_3/dto/USD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ohgiraffers/Q2_3/run/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/src/main/java/com/ohgiraffers/test/controller/BookManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/src/main/java/com/ohgiraffers/test/model/comparator/AscCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/src/main/java/com/ohgiraffers/test/model/comparator/DescCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/src/main/java/com/ohgiraffers/test/model/dto/BookDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/src/main/java/com/ohgiraffers/test/run/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_240219/src/main/java/com/ohgiraffers/test/view/BookMenu.java" beforeDir="false" />
-    </list>
+    <list default="true" id="8db23870-8600-4c23-a131-6640a88a2f43" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
