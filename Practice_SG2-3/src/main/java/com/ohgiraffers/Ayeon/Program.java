@@ -11,7 +11,11 @@ public class Program {
     private String address = "등록된 배송지가 없습니다. 배송지를 등록해 주세요.";
     ArrayList<String> cartList = new ArrayList<>();
     private boolean isTrue = false;
-    String[][] kindArr = new String[2][];
+    private String[][] kindArr = new String[2][];
+    {
+        kindArr[0] = new String[]{"아몬드 26650","블루베리 12980","고추장 16620"};
+        kindArr[1] = new String[]{"사료 40000","장난감 20050","간식 26820","매트 70000"};
+    }
 
     public void join(){
         label: while(true){

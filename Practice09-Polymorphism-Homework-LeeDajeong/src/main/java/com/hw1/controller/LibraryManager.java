@@ -34,7 +34,6 @@ public class LibraryManager {
                 emptyList[i] = bList[i];
             }
         }
-
         return emptyList;
     }
     public int rentBook(int index){

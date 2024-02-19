@@ -13,21 +13,28 @@ public class LibraryMenu {
     public void mainMenu(){
         Member member = new Member();
 
+//        System.out.print("이름 입력 : ");
+//        member.setName(sc.nextLine());
+//        System.out.print("나이 입력 : ");
+//        member.setAge(sc.nextInt());
+//        System.out.print("성별 입력 : ");
+//        member.setGender(sc.next().charAt(0));
+//        lm.insertMember(new Member(member.getName(), member.getAge(), member.getGender()));
+
         System.out.print("이름 입력 : ");
-        member.setName(sc.nextLine());
+        String name = sc.nextLine();
         System.out.print("나이 입력 : ");
-        member.setAge(sc.nextInt());
+        int age = sc.nextInt();
         System.out.print("성별 입력 : ");
-        member.setGender(sc.next().charAt(0));
-
-        sc.nextLine();
-
-        lm.insertMember(new Member(member.getName(), member.getAge(), member.getGender()));
+        char gender = sc.next().charAt(0);
+        lm.insertMember(new Member(name, age, gender));
 
         label : for(;;){
             System.out.println("==== 메뉴 ====\n1. 마이페이지\n2. 도서 전체 조회\n3. 도서 검색\n4. 도서 대여하기\n0. 프로그램 종료하기");
             System.out.print("메뉴 선택 : ");
             int num = sc.nextInt();
+
+            sc.nextLine();  // 위에서 개행문자를 처리해 주기 위해 반드시 입력해줘야 한다.
 
             switch (num){
                 case 1 :
@@ -51,7 +58,6 @@ public class LibraryMenu {
         }
     }
     public void searchBook(){
-        sc = new Scanner(System.in);
         System.out.print("검색할 제목 키워드 : ");
         String str = sc.nextLine();
         Book[] searchList = lm.serachBook(str);

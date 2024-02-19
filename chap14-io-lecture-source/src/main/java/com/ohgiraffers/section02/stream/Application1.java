@@ -25,7 +25,7 @@ public class Application1 {
 
         try {
             fin = new FileInputStream("src/main/java/com/ohgiraffers/section02/stream/testInputStream.txt");
-            int value;
+//            int value;
 //            while((value = fin.read()) != -1){
 //                System.out.println(value);
 //                System.out.println((char) value);
