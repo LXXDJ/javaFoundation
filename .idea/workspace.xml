@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b27832f1-0f64-4a39-9f9e-2a9e81f44b0d" name="Changes" comment="" />
+    <list default="true" id="b27832f1-0f64-4a39-9f9e-2a9e81f44b0d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-variable-lecture-source/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chap01-literal-and-variable-lecture-source/.idea/gradle.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,9 +25,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/dev/lecture_code/JavaFoundation",
+    "last_opened_file_path": "C:/dev/lecture_code/JavaFoundation/chap14-io-lecture-source",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -38,6 +44,9 @@
       <workItem from="1706667270948" duration="64000" />
       <workItem from="1707114050069" duration="154000" />
       <workItem from="1708331253234" duration="76000" />
+      <workItem from="1708331957143" duration="209000" />
+      <workItem from="1708332247122" duration="17000" />
+      <workItem from="1708332288693" duration="98000" />
     </task>
     <servers />
   </component>
