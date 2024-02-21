@@ -1,7 +1,7 @@
-package com.ohgiraffers.Dajeong_e.view;
+package com.ohgiraffers.Dajeong_asc.view;
 
-import com.ohgiraffers.Dajeong_e.controller.stockManager;
-import com.ohgiraffers.Dajeong_e.dto.Member;
+import com.ohgiraffers.Dajeong_asc.controller.stockManager;
+import com.ohgiraffers.Dajeong_asc.dto.Member;
 
 import java.util.Scanner;
 
@@ -16,19 +16,9 @@ public class stockMenu {
         System.out.print("이름 입력 : ");
         String name = sc.nextLine();
         int money = 0;
-        label: while (true){
-            System.out.print("현금 입금(최대 20억) : ");
-            money = sc.nextInt();
-            if(money <= 0){
-                System.out.println("0 또는 음수는 입력하실 수 없습니다. 다시 입력해주세요.");
-                continue label;
-            }else if(money > 2000000000){
-                System.out.println("최대 입금 금액은 20억 입니다. 20억을 입금합니다.");
-                money = 2000000000;
-            }
-            sc.nextLine();
-            break;
-        }
+        System.out.print("현금 입금(최대 20억) : ");
+        money = sc.nextInt();
+        sc.nextLine();
 
         sm.insertInfo(new Member(name, money));
 
@@ -51,9 +41,6 @@ public class stockMenu {
                 case 4 : buyStock();
                     continue label;
                 case 5 : sellStock();
-                    continue label;
-                default:
-                    System.out.println("보기중에서 선택해주세요.");
                     continue label;
             }
             break;

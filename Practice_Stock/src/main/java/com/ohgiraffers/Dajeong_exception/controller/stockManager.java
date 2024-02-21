@@ -1,14 +1,15 @@
-package com.ohgiraffers.Dajeong2.controller;
+package com.ohgiraffers.Dajeong_exception.controller;
 
-import com.ohgiraffers.Dajeong2.comparator.AscPrice;
-import com.ohgiraffers.Dajeong2.comparator.AscTitle;
-import com.ohgiraffers.Dajeong2.comparator.DescPrice;
-import com.ohgiraffers.Dajeong2.comparator.DescTitle;
-import com.ohgiraffers.Dajeong2.dto.Member;
-import com.ohgiraffers.Dajeong2.dto.stockDTO;
+import com.ohgiraffers.Dajeong_exception.comparator.AscPrice;
+import com.ohgiraffers.Dajeong_exception.comparator.AscTitle;
+import com.ohgiraffers.Dajeong_exception.comparator.DescPrice;
+import com.ohgiraffers.Dajeong_exception.comparator.DescTitle;
+import com.ohgiraffers.Dajeong_exception.dto.Member;
+import com.ohgiraffers.Dajeong_exception.dto.stockDTO;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class stockManager {
@@ -16,6 +17,10 @@ public class stockManager {
     private Member mem = null;
     private ArrayList<stockDTO> account;
     private ArrayList<stockDTO> stockList;
+
+    public ArrayList<stockDTO> account(){return account;}
+    public ArrayList<stockDTO> stockList(){return stockList;}
+
     public stockManager(){
         account = new ArrayList<>();
         stockList = new ArrayList<>();
@@ -34,7 +39,7 @@ public class stockManager {
         stockList.add(new stockDTO("LG화학", 506000));
     }
     public void displayAll(){
-        sortedBookList(stockList);
+        sortedStockList(stockList);
         for (stockDTO i : stockList){
             System.out.println(i);
         }
@@ -46,38 +51,45 @@ public class stockManager {
         System.out.println(this.mem);
         myAccount();
     }
+    public boolean haveAccount(){
+        boolean have = false;
+        if(account.size() <= 0) {
+            have = false;
+        }
+        if(account.size() >= 1){
+            have = true;
+        }
+        return have;
+
+    }
     public void myAccount(){
-        if(account.size() == 0) {
+        if(account.size() <= 0) {
             System.out.println("보유 주식이 없습니다.");
             return;
-        }
-        if(account.size() > 1){
-            sortedBookList(account);
         }
         for(int i=0; i<account.size(); i++){
             System.out.println("보유 종목명 : " + account.get(i).getTitle() + ", 개수 : " + account.get(i).getCount() + ", 현재가 : " + account.get(i).getPrice() + "원");
         }
     }
-    public ArrayList<stockDTO> sortedBookList(ArrayList<stockDTO> list){
+    public ArrayList<stockDTO> sortedStockList(ArrayList<stockDTO> list){
         label : while (true){
             System.out.print("정렬 방식 선택(1.종목명 오름차순 / 2.종목명 내림차순 / 3.현재가 오름차순 / 4.현재가 내림차순) : ");
-            int type = sc.nextInt();
-            sc.nextLine();
+            String type = sc.nextLine();
 
             switch (type){
-                case 1 :
+                case "1" :
                     Comparator<stockDTO> ascTtl = new AscTitle();
                     list.sort(ascTtl);
                     break;
-                case 2 :
+                case "2" :
                     Comparator<stockDTO> descTtl = new DescTitle();
                     list.sort(descTtl);
                     break;
-                case 3 :
+                case "3" :
                     Comparator<stockDTO> ascNo = new AscPrice();
                     list.sort(ascNo);
                     break;
-                case 4 :
+                case "4" :
                     Comparator<stockDTO> descNo = new DescPrice();
                     list.sort(descNo);
                     break;
@@ -92,8 +104,16 @@ public class stockManager {
     }
 
     public void addMoney(int num){
-        mem.setMoney(mem.getMoney() + num);
-        System.out.println("현재 보유금액 : " + mem.getMoney());
+        long totalMoney=(long)num+mem.getMoney();
+        if(totalMoney!=(int)totalMoney || totalMoney>2000000000){
+            System.out.println(num+" 입금시 보유 금액이 20억을 초과하기 때문에 입금이 불가능합니다.");
+            System.out.println("현재 최대 "+(2000000000- mem.getMoney())+" 까지 입금 가능합니다.");
+        }else{
+            mem.setMoney(mem.getMoney() + num);
+            System.out.println("현재 보유금액 : " + mem.getMoney());
+        }
+
+
     }
     public boolean buyStock(String ttl, int num){
         boolean isTrue = false;
@@ -107,11 +127,23 @@ public class stockManager {
 
         System.out.println("가격 : " + price);
         int needs = price * num;
-        stockDTO dto = new stockDTO(ttl, num, price);
+        boolean has = true;
+//        stockDTO dto = null;
+
+        for(int i=0; i<account.size(); i++){
+            if(account.get(i).getTitle().equals(ttl)){
+                has = false;
+                account.get(i).setCount(account.get(i).getCount() + num);
+            }
+        }
+
 
         if(needs < mem.getMoney()) {
             isTrue = true;
-            account.add(dto);
+            if(has){
+                stockDTO dto = new stockDTO(ttl, num, price);
+                account.add(dto);
+            }
             mem.setMoney(mem.getMoney() - needs);
         }
 
@@ -132,9 +164,21 @@ public class stockManager {
         if(present == 0) return result;
 
         System.out.println(ttl + " 주식의 현재가는 " + present + "원 입니다.");
-        System.out.print("매도 하시겠습니까?(1.네 / 2.아니오): ");
-        int index = sc.nextInt();
-        sc.nextLine();
+        int index = -1;
+        label : while(true){
+            System.out.print("매도 하시겠습니까?(1.네 / 2.아니오): ");
+            try{
+                index = sc.nextInt();
+            }catch (InputMismatchException e){
+                sc.nextLine();
+            }
+
+            if(index != 1 && index != 2){
+                System.out.println("보기중에서 선택해주세요");
+                continue label;
+            }
+            break;
+        }
 
         if(index == 2){
             result = 2;

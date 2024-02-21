@@ -1,6 +1,6 @@
-package com.ohgiraffers.Dajeong_e.comparator;
+package com.ohgiraffers.Dajeong_exception.comparator;
 
-import com.ohgiraffers.Dajeong_e.dto.stockDTO;
+import com.ohgiraffers.Dajeong_exception.dto.stockDTO;
 
 import java.util.Comparator;
 

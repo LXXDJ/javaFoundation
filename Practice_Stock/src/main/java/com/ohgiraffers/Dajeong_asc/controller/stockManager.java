@@ -1,11 +1,11 @@
-package com.ohgiraffers.Dajeong_e.controller;
+package com.ohgiraffers.Dajeong_asc.controller;
 
-import com.ohgiraffers.Dajeong_e.comparator.AscPrice;
-import com.ohgiraffers.Dajeong_e.comparator.AscTitle;
-import com.ohgiraffers.Dajeong_e.comparator.DescPrice;
-import com.ohgiraffers.Dajeong_e.comparator.DescTitle;
-import com.ohgiraffers.Dajeong_e.dto.Member;
-import com.ohgiraffers.Dajeong_e.dto.stockDTO;
+import com.ohgiraffers.Dajeong_asc.comparator.AscPrice;
+import com.ohgiraffers.Dajeong_asc.comparator.AscTitle;
+import com.ohgiraffers.Dajeong_asc.comparator.DescPrice;
+import com.ohgiraffers.Dajeong_asc.comparator.DescTitle;
+import com.ohgiraffers.Dajeong_asc.dto.Member;
+import com.ohgiraffers.Dajeong_asc.dto.stockDTO;
 
 import java.util.ArrayList;
 import java.util.Comparator;

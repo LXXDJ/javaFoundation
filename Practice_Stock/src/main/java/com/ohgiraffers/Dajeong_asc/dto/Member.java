@@ -1,4 +1,4 @@
-package com.ohgiraffers.Dajeong2.dto;
+package com.ohgiraffers.Dajeong_asc.dto;
 
 public class Member {
     private String name;

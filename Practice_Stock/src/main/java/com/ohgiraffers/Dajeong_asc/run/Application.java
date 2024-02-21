@@ -1,6 +1,6 @@
-package com.ohgiraffers.Dajeong2.run;
+package com.ohgiraffers.Dajeong_asc.run;
 
-import com.ohgiraffers.Dajeong2.view.stockMenu;
+import com.ohgiraffers.Dajeong_asc.view.stockMenu;
 
 public class Application {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package com.ohgiraffers.Dajeong2.comparator;
+package com.ohgiraffers.Dajeong_asc.comparator;
 
-import com.ohgiraffers.Dajeong2.dto.stockDTO;
+import com.ohgiraffers.Dajeong_asc.dto.stockDTO;
 
 import java.util.Comparator;
 

@@ -1,4 +1,4 @@
-package com.ohgiraffers.Dajeong_e.dto;
+package com.ohgiraffers.Dajeong_exception.dto;
 
 public class Member {
     private String name;
