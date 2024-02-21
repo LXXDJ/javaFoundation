@@ -1,11 +1,11 @@
-package com.ohgiraffers.Dajeong.controller;
+package com.ohgiraffers.Dajeong2.controller;
 
-import com.ohgiraffers.Dajeong.comparator.AscPrice;
-import com.ohgiraffers.Dajeong.comparator.AscTitle;
-import com.ohgiraffers.Dajeong.comparator.DescPrice;
-import com.ohgiraffers.Dajeong.comparator.DescTitle;
-import com.ohgiraffers.Dajeong.model.dto.Member;
-import com.ohgiraffers.Dajeong.model.dto.stockDTO;
+import com.ohgiraffers.Dajeong2.comparator.AscPrice;
+import com.ohgiraffers.Dajeong2.comparator.AscTitle;
+import com.ohgiraffers.Dajeong2.comparator.DescPrice;
+import com.ohgiraffers.Dajeong2.comparator.DescTitle;
+import com.ohgiraffers.Dajeong2.dto.Member;
+import com.ohgiraffers.Dajeong2.dto.stockDTO;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -14,22 +14,27 @@ import java.util.Scanner;
 public class stockManager {
     private Scanner sc = new Scanner(System.in);
     private Member mem = null;
-    private stockDTO[] stockList = new stockDTO[10];
-    {
-        stockList [0] = new stockDTO("삼성전자", 73300);
-        stockList [1] = new stockDTO("SK하이닉스", 149600);
-        stockList [2] = new stockDTO("LG에너지솔루션", 404000);
-        stockList [3] = new stockDTO("삼성바이오로직스", 818000);
-        stockList [4] = new stockDTO("삼성전자우", 62900);
-        stockList [5] = new stockDTO("현대차", 242000);
-        stockList [6] = new stockDTO("기아", 116100);
-        stockList [7] = new stockDTO("셀트리온", 179900);
-        stockList [8] = new stockDTO("POSCO홀딩스", 440000);
-        stockList [9] = new stockDTO("LG화학", 506000);
-    }
     private ArrayList<stockDTO> account;
-    public stockManager(){account = new ArrayList<>();}
+    private ArrayList<stockDTO> stockList;
+    public stockManager(){
+        account = new ArrayList<>();
+        stockList = new ArrayList<>();
+        insertStock();
+    }
+    public void insertStock(){
+        stockList.add(new stockDTO("삼성전자", 73300));
+        stockList.add(new stockDTO("SK하이닉스", 149600));
+        stockList.add(new stockDTO("LG에너지솔루션", 404000));
+        stockList.add(new stockDTO("삼성바이오로직스", 818000));
+        stockList.add(new stockDTO("삼성전자우", 62900));
+        stockList.add(new stockDTO("현대차", 242000));
+        stockList.add(new stockDTO("기아", 116100));
+        stockList.add(new stockDTO("셀트리온", 179900));
+        stockList.add(new stockDTO("POSCO홀딩스", 440000));
+        stockList.add(new stockDTO("LG화학", 506000));
+    }
     public void displayAll(){
+        sortedBookList(stockList);
         for (stockDTO i : stockList){
             System.out.println(i);
         }
@@ -47,13 +52,13 @@ public class stockManager {
             return;
         }
         if(account.size() > 1){
-            sortedBookList();
+            sortedBookList(account);
         }
         for(int i=0; i<account.size(); i++){
             System.out.println("보유 종목명 : " + account.get(i).getTitle() + ", 개수 : " + account.get(i).getCount() + ", 현재가 : " + account.get(i).getPrice() + "원");
         }
     }
-    public ArrayList<stockDTO> sortedBookList(){
+    public ArrayList<stockDTO> sortedBookList(ArrayList<stockDTO> list){
         label : while (true){
             System.out.print("정렬 방식 선택(1.종목명 오름차순 / 2.종목명 내림차순 / 3.현재가 오름차순 / 4.현재가 내림차순) : ");
             int type = sc.nextInt();
@@ -62,19 +67,19 @@ public class stockManager {
             switch (type){
                 case 1 :
                     Comparator<stockDTO> ascTtl = new AscTitle();
-                    account.sort(ascTtl);
+                    list.sort(ascTtl);
                     break;
                 case 2 :
                     Comparator<stockDTO> descTtl = new DescTitle();
-                    account.sort(descTtl);
+                    list.sort(descTtl);
                     break;
                 case 3 :
                     Comparator<stockDTO> ascNo = new AscPrice();
-                    account.sort(ascNo);
+                    list.sort(ascNo);
                     break;
                 case 4 :
                     Comparator<stockDTO> descNo = new DescPrice();
-                    account.sort(descNo);
+                    list.sort(descNo);
                     break;
                 default:
                     System.out.println("보기중에서 선택해주세요.");
@@ -83,7 +88,7 @@ public class stockManager {
             break;
         }
 
-        return account;
+        return list;
     }
 
     public void addMoney(int num){
@@ -94,9 +99,9 @@ public class stockManager {
         boolean isTrue = false;
         int price = 0;
 
-        for (int i=0; i<stockList.length; i++){
-            if(stockList[i].getTitle().equals(ttl)){
-                price = stockList[i].getPrice();
+        for (int i=0; i<stockList.size(); i++){
+            if(stockList.get(i).getTitle().equals(ttl)){
+                price = stockList.get(i).getPrice();
             }
         }
 
