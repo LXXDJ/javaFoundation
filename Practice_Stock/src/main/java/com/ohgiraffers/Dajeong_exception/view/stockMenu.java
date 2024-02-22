@@ -85,7 +85,7 @@ public class stockMenu {
             }
 
         }catch (InputMismatchException e){
-            System.out.println("20억이 넘는 금액을 입금하실 수 없습니다.");
+            System.out.println("유효하지 않은 숫자입니다. 다시 입력해주세요.");
             sc.nextLine();
         }
     }
@@ -160,12 +160,14 @@ public class stockMenu {
                 boolean isTrue = true;
 
                 for(int i=0; i<sm.account().size(); i++){
-                    if(num > sm.account().get(i).getCount()) {
-                        System.out.println("보유 개수가 " + sm.account().get(i).getCount() + "개 입니다. 보유개수 이하로 입력해주세요");
-                        continue label;
-                    }else if(num <= 0){
-                        System.out.println("0개 이하의 주식은 거래할 수 없습니다. 다시 입력해주세요.");
-                        continue label;
+                    if(sm.account().get(i).getTitle().equals(ttl)){
+                        if(num > sm.account().get(i).getCount()) {
+                            System.out.println("보유 개수가 " + sm.account().get(i).getCount() + "개 입니다. 보유개수 이하로 입력해주세요");
+                            continue label;
+                        }else if(num <= 0){
+                            System.out.println("0개 이하의 주식은 거래할 수 없습니다. 다시 입력해주세요.");
+                            continue label;
+                        }
                     }
                 }
 
