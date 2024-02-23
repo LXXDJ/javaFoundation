@@ -11,6 +11,7 @@ public class Q1 {
         label: while(true){
             System.out.print("정수 입력 : ");
             int num = sc.nextInt();
+            sc.nextLine();
 
             if(num < 1 || 100 < num){
                 System.out.println("1부터 100사이의 정수를 입력해주세요");

@@ -43,5 +43,4 @@ public class Application {
         System.out.println("대결할 선수는 " + randomNum1 + "과 " + randomNum2 + "입니다");
         System.out.println(str);
     }
-
 }
