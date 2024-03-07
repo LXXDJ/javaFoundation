@@ -53,6 +53,7 @@ public class Application1 {
         for(int i=0; i<alist.size(); i++){
             System.out.println(i+" : "+alist.get(i));
         }
+
         alist.add("apple"); // 동일한 값 저장 가능
         System.out.println("alist : " + alist); // [apple, 123, 45.67, Tue Feb 13 12:36:05 KST 2024, apple]
 

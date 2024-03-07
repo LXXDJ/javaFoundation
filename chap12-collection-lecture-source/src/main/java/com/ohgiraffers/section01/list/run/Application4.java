@@ -1,5 +1,6 @@
 package com.ohgiraffers.section01.list.run;
 
+import java.sql.SQLOutput;
 import java.util.Stack;
 
 public class Application4 {
@@ -38,5 +39,33 @@ public class Application4 {
         System.out.println("pop() : " + integerStack.pop());        // 1
 //        System.out.println("pop() : " + integerStack.pop());      // EmptyStackException : stack이 이미 비어있는 경우 에러 발생
 
+
+        System.out.println("\n=== String 예시 추가 ====\n");
+
+        Stack<String> strStack = new Stack<>();
+
+        strStack.push("가");
+        strStack.push("나");
+        strStack.push("다");
+        strStack.push("라");
+        strStack.push("마");
+
+        System.out.println(strStack);   // [가, 나, 다, 라, 마]
+
+        // 위에서부터 아래로의 순서 (0번째 인덱스부터 바닥에 깔림)
+        System.out.println("search() : " + strStack.search("나"));   // 4
+
+        System.out.println("peek() : " + strStack.peek());      // 마
+        System.out.println(strStack);                           // [가, 나, 다, 라, 마]
+        System.out.println("pop() : " + strStack.pop());        // 마
+        System.out.println(strStack);                           // [가, 나, 다, 라]
+
+        strStack.pop();
+        strStack.pop();
+        strStack.pop();
+        strStack.pop();
+
+        System.out.println("empty() : " + strStack.empty());    // true
+        System.out.println("isEmpty() : " + strStack.isEmpty());    // true
     }
 }
