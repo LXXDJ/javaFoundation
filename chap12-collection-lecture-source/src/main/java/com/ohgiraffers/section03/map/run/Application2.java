@@ -43,5 +43,7 @@ public class Application2 {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        System.out.println(prop.getProperty("a"));
     }
 }

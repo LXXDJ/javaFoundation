@@ -11,21 +11,19 @@ public class Application {
 
         File file = new File("src/main/java/com/ohgiraffers/section01/file/test.txt");
 
-        {
-            try {
-                boolean createSuccess = file.createNewFile();
-                System.out.println("createSuccess : " + createSuccess);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            System.out.println("파일의 크기 : " + file.length() + "byte");
-            System.out.println("파일의 경로 : " + file.getPath());
-            System.out.println("현재 파일의 상위 경로 : " + file.getParent());   // 현재 파일의 상위 경로까지만 출력
-            System.out.println("파일의 절대경로 : " + file.getAbsolutePath());  // 최상위 위치부터의 경로
-
-            boolean deleteSucess = file.delete();
-            System.out.println("deleteSucess : " + deleteSucess);
+        try {
+            boolean createSuccess = file.createNewFile();
+            System.out.println("createSuccess : " + createSuccess);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+
+        System.out.println("파일의 크기 : " + file.length() + "byte");
+        System.out.println("파일의 경로 : " + file.getPath());
+        System.out.println("현재 파일의 상위 경로 : " + file.getParent());   // 현재 파일의 상위 경로까지만 출력
+        System.out.println("파일의 절대경로 : " + file.getAbsolutePath());  // 최상위 위치부터의 경로
+
+        boolean deleteSucess = file.delete();
+        System.out.println("deleteSucess : " + deleteSucess);
     }
 }

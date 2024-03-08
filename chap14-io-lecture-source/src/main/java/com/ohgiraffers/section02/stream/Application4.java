@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Application4 {
     public static void main(String[] args) {
         /* [FileWriter]
-        *  프로그래므이 데이터를 파일로 내보내기 위한 용도의 스트림
+        *  프로그램이 데이터를 파일로 내보내기 위한 용도의 스트림
         *  1글자 단위로 데이터 처리 */
 
         FileWriter fw = null;

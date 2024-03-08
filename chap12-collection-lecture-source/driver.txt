@@ -1,5 +1,5 @@
 #jdbc driver
-#Wed Feb 14 12:46:39 KST 2024
+#Fri Mar 08 10:49:16 KST 2024
 password=ohgiraffers
 driver=com.mysql.cj.jdbc.Driver
 user=ohgiraffers
